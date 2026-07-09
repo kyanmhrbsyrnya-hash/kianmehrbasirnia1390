@@ -1,0 +1,110 @@
+number = int(input('لطفا یک عدد وارد کنید: '))
+if number > 0:
+    print('عدد مثبت است')
+elif number == 0:
+    print('عدد صفر است')
+else:
+    print('عدد منفی است')
+
+
+####زوج یا فرد بودن عدد
+number = int(input('یک عدد انتخاب کنید: '))
+if number % 2 == 0:
+    print('عدد زوج است')
+else:
+    print('عدد فرد است')
+
+
+####مقایسه دوعدد
+num1 = int(input('لطفا عدد اول را وارد کنید: '))
+num2 = int(input('لطفا عدد دوم را انتخاب کنید: '))
+if num2 > num1:
+    print('عدد دوم بزرگتر است')
+elif num2 == num1:
+    print('اعداد مساوی است')
+else:
+    print('عدد اول بزرگتر است')
+
+
+####تایید رمز عبور
+password = input('لطفاً رمز را وارد کنید: ')
+if password == "1234":
+    print('خوش آمدید')
+else:
+    print('رمز اشتباه است')
+
+
+####ماشین حساب پیشرفته
+num1 = float(input('عدد اول: '))
+sign = input('علامت مورد نظر را وارد کنید (+, -, *, /): ')
+num2 = float(input('عدد دوم: '))
+
+if sign == "+":
+    print(f"نتیجه: {num1 + num2}")
+elif sign == "-":
+    print(f"نتیجه: {num1 - num2}")
+elif sign == "*":
+    print(f"نتیجه: {num1 * num2}")
+elif sign == "/":
+    if num2 != 0:
+        print(f"نتیجه: {num1 / num2}")
+    else:
+        print("خطا: تقسیم بر صفر ممکن نیست!")
+else:
+    print("علامت وارد شده اشتباه است.")
+
+
+####دماسنج ساده
+temp = float(input('لطفا دما را وارد کنید: '))
+if temp < 10:
+    print('هوا خیلی سرده')
+elif 10 <= temp <= 25:
+    print('هوا عالیه')
+else:
+    print('هوا خیلی گرمه')
+
+
+####ساعت روز
+hour = float(input('ساعت چند است (از 0 تا 24): '))
+if 6 <= hour < 12:
+    print('صبح بخیر')
+elif 12 <= hour < 18:
+    print('عصر بخیر')
+elif 18 <= hour <= 24:
+    print('شب بخیر')
+elif 0 <= hour < 6:
+    print('نیمه شب')
+else:
+    print('این ساعت وجود نداره')
+
+
+####محدوده سنی
+age = int(input('سن خود را وارد کنید: '))
+if age < 13:
+    print('کودک')
+elif 13 <= age < 20:
+    print('نوجوان')
+elif 20 <= age < 60:
+    print('بزرگسال')
+else:
+    print('سالمند')
+
+
+####تایید نام کاربری
+use = input('لطفا اسم خود را وارد کنید: ')
+if use == 'کیانمهر':
+    print('سلام کیانمهر')
+else:
+    print('کاربر ناشناس')
+
+
+####سنجش توان
+num = int(input('لطفا عدد (1-10) را وارد کنید: '))
+if num == 10:
+    print('فوق‌العاده')
+elif 7 <= num <= 9:
+    print('خیلی خوب')
+elif 1 <= num <= 6:
+    print('بیشتر تلاش کن')
+else:
+    print('عدد باید بین 1 تا 10 باشد')
